@@ -8,7 +8,14 @@
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-button expand="full" (click)="scanCode()" color="danger">
+      <ion-icon name="qr-scanner"></ion-icon>
+      Scan code
+    </ion-button>
   </div>
+  <ion-card>
+    <ion-card-content> 
+      {{ scannedCode }}
+    </ion-card-content>
+  </ion-card>
 </ion-content>
